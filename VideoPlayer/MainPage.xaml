@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VideoPlayer.MainPage" 
+             xmlns:vp="http://xamarin.com/schemas/2020/toolkit" BackgroundColor="LightBlue" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="LightBlue" CornerRadius="0">
+            <Label Text="VideoPlayer" HorizontalTextAlignment="Center" TextColor="DarkSlateGray" FontSize="30"/>
+        </Frame>
+        <ScrollView>
+            <StackLayout>
+
+                <Frame BackgroundColor="Black">
+                    <vp:MediaElement Source="https://www.appsloveworld.com/wp-content/uploads/2018/10/640.mp4" AutoPlay="False" Margin="5" HeightRequest="200" WidthRequest="300" 
+                         HorizontalOptions="Center"/>
+
+                </Frame>
+                <Frame BackgroundColor="Black">
+                    <vp:MediaElement Source="https://www.appsloveworld.com/wp-content/uploads/2018/10/sample-mp4-video.mp4" AutoPlay="False" Margin="5" HeightRequest="200" WidthRequest="270" 
+                         HorizontalOptions="Center"/>
+
+                </Frame>
+                <Frame BackgroundColor="Black">
+                    <vp:MediaElement Source="https://www.appsloveworld.com/wp-content/uploads/2018/10/Sample-Mp4-Videos.mp4" AutoPlay="False" Margin="5" HeightRequest="200" WidthRequest="300" 
+                         HorizontalOptions="Center"/>
+
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+       
+    </StackLayout>
+
+</ContentPage>
